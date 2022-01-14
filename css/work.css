@@ -274,6 +274,9 @@ visibility: visible;
 .card .bottom-text .text{
   text-align: justify;
 }
+.card .bottom-text .text ul{
+  padding-left: 20px;
+}
 .card .bottom-text .btn {
   margin-top: 25px;
   text-align: left;
