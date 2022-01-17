@@ -277,7 +277,7 @@ footer {
 }
 
 /* works section styling */
-.work .title::after {
+/* .work .title::after {
   content: '  What I have done  ';
 }
 .work .carousel .card {
@@ -336,18 +336,18 @@ footer {
 .owl-dot.active,
 .owl-dot:hover {
   background: rgb(58, 207, 158) !important;
-}
+} */
 
 /* contact section styling */
 .contact {
-  color: white;
-  background: #000;
-}
-.contact .title::before {
+  color: #000;
   background: white;
 }
-.contact .title::after {
+.contact .title::before {
   background: #000;
+}
+.contact .title::after {
+  background: white;
   content: '  Get  in touch  ';
 }
 .contact .contact-content .column {
@@ -381,7 +381,7 @@ footer {
   font-weight: 500;
 }
 .contact .contact-content .row .info .sub-title {
-  color: #b6b1b1;
+  color: #9e9c9c;
 }
 .contact .right form .fields {
   display: flex;
@@ -444,6 +444,8 @@ footer {
   padding: 20px 20px;
   text-align: center;
   font-size: 14px;
+  background: #000;
+  color: #fff;
 }
 footer a {
   color: rgb(58, 207, 158);
