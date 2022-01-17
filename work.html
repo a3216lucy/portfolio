@@ -101,6 +101,19 @@
                   <div class="btn"><a href="#">Read More</a></div>
                 </div>
               </div>
+              <div class="card">
+                <div class="img">
+                  <img src="/images/work-1.png" alt="">
+                </div>
+                <div class="top-text">
+                  <p>Lorem ipsum </p>
+                </div>
+                <div class="bottom-text">
+                  <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem alias accusantium debitis mollitia modi?</div>
+                  <div class="btn"><a href="#">Read More</a></div>
+                </div>
+              </div>
+
             </div>
             
             <div class="tab_content" id="tab-content2">
@@ -185,35 +198,6 @@
                   <div class="btn o3-3"><a href="#">Read More</a></div>
                 </div>
               </div>
-
-              <div class="card">
-                <div class="img">
-                  <img class="o3-3" style="cursor: pointer;" src="/images/work3-3.jpg" alt="">
-                </div>
-                <div class="top-text">
-                  <p>蝦米音樂</p>
-                  <div class="name">競品分析報告</div>
-                </div>
-                <div class="bottom-text">
-                  <div class="text">以「蝦米音樂」為視角出發所做的競品分析，因該產品市場核心主要以中國為主，因此競品對象挑選近期急速竄升排行榜的網易雲音樂，內容以「用戶體驗五要素」的幾個維度進行分析。</div>
-                  <div class="btn o3-3"><a href="#">Read More</a></div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="img">
-                  <img class="o3-3" style="cursor: pointer;" src="/images/work3-3.jpg" alt="">
-                </div>
-                <div class="top-text">
-                  <p>蝦米音樂</p>
-                  <div class="name">競品分析報告</div>
-                </div>
-                <div class="bottom-text">
-                  <div class="text">以「蝦米音樂」為視角出發所做的競品分析，因該產品市場核心主要以中國為主，因此競品對象挑選近期急速竄升排行榜的網易雲音樂，內容以「用戶體驗五要素」的幾個維度進行分析。</div>
-                  <div class="btn o3-3"><a href="#">Read More</a></div>
-                </div>
-              </div>
-
           </div>   
         </div>
         
@@ -502,6 +486,8 @@ $(document).ready(function () {
 		
 	});	
 
+ 
+
 // web design 01 section
 $(".b2-1").hide();
   $(".o2-1").click(function () {
@@ -571,6 +557,12 @@ $(".b2-1").hide();
   });
 });
 
+
+ //setting content height
+ $(document).ready(function () {
+    var el = document.querySelectorAll('tab_content_container')[0];
+    
+ });
     </script>
   </body>
 </html>

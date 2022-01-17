@@ -104,6 +104,9 @@ html {
 /* all similar content styling code */
 section {
   padding: 100px 0;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
 }
 section .title {
   position: relative;
@@ -186,11 +189,10 @@ section .title::after {
 .tab_content_container { 
   border-radius: 6px;
   background: rgb(241, 241, 241);
-  height:1000px;
+  /* height:1000px; */
   width:1200px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding-top: 70px;
   font-family: 'Noto Sans Traditional Chinese', 'Poppins', sans-serif;
