@@ -275,6 +275,11 @@ footer {
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+.skill .skill-content .card ul{
+margin-left: 30px;
+  display: inline-block;
+  text-align: left;
+}
 
 /* works section styling */
 /* .work .title::after {

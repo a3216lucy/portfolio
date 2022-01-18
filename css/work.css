@@ -587,10 +587,10 @@ footer a:hover {
     font-size: 27px;
   }
   .dropdownmenu{
-    width: 350px;
+    width: 350px; 
   }
   .dropdownmenu a{
-    padding: 3px 10px;
+    padding: 7px 20px;
     font-size: 12px;
   }
   .tab_content_container {
