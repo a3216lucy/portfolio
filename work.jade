@@ -1,0 +1,506 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='css/work.css')
+    link(rel='icon' href='./images/favicon.png')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css')
+    script(src='https://kit.fontawesome.com/a076d05399.js')
+    script(src='https://code.jquery.com/jquery-3.6.0.min.js')
+    script(src='jquery.colorbox.js' type='text/javascript')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js')
+    title Kimi's Portfolio
+    style.
+  body
+    #container
+      nav.navbar
+        .max-width
+          .logo
+            a(href='/index.html')
+              | Portfo
+              span lio
+          ul.menu
+            li
+              a(href='/index.html') Home
+            li
+              a(href='/index.html#about') About
+            li
+              a(href='/index.html#skill') Skills
+            li
+              a(href='#work') Works
+            li
+              a(href='/index.html#contact') Contact
+          .menu-btn
+            i.fas.fa-bars
+    // home section start
+    section#work.work
+      .max-width
+        h2.title Work
+        nav.dropdownmenu
+          ul
+            li
+              a.tab.active(href='javascript:void(0); return false;' rel='#tab-content1') Web Project
+            li
+              a.tab(href='javascript:void(0); return false;' rel='#tab-content2') Web Design
+            li
+              a.tab(href='javascript:void(0); return false;' rel='#tab-content3') Product Design
+        .tab_content_container
+          #tab-content1.tab_content.tab_content_active
+            .card
+              .img
+                img(src='/images/work1-4.png' alt='')
+              .top-text
+                p 簡易公車查詢系統
+                .name 2022/02 練習作品
+              .bottom-text
+                .text
+                  ul
+                    li 使用 TailWindCSS + JavaScript 來撰寫
+                    li 透過 DOM 控制網頁內容
+                    li
+                      | 使用 Axios 串接 
+                      a(href='https://tdx.transportdata.tw/' target='new_blank') TDX 運輸資料流通服務
+                      |  API 資料
+                .btn.btn-1
+                  a(href='https://a3216lucy.github.io/bus_search_app/' target='new_blank') Website
+                .btn.btn-2
+                  a(href='https://github.com/a3216lucy/bus_search_app' target='new_blank') GitHub
+            .card
+              .img
+                img(src='/images/work1-5.png' alt='')
+              .top-text
+                p ToDoList
+                .name 2022/01 練習作品
+              .bottom-text
+                .text
+                  ul
+                    li
+                      | 依照 
+                      a(href='https://hexschool.github.io/THE_F2E_Design/todolist/' target='new_blank') 六角學院提供的設計稿
+                      |  來實作
+                    li 使用 localStorage 來存取新增的待辦事項
+                    li 可根據不同 Task Status 來切換並設置置頂
+                    li 使用插件來實行拖動（drag）todos 的效果
+                .btn.btn-1
+                  a(href='https://a3216lucy.github.io/react-todo/' target='new_blank') Website
+                .btn.btn-2
+                  a(href='https://github.com/a3216lucy/react-todo' target='new_blank') GitHub
+            .card
+              .img
+                img(src='/images/work1-2.png' alt='')
+              .top-text
+                p 綠島景點介紹網站
+                .name 2020 旅遊紀錄，2021/10 實作
+              .bottom-text
+                .text
+                  ul
+                    li 使用 jQuery Plugin 整合動畫效果
+                    li SVG 動態地圖應用 
+                .btn.btn-1
+                  a(href='https://a3216lucy.github.io/green_island_website/index.html' target='new_blank') Website
+                .btn.btn-2
+                  a(href='https://github.com/a3216lucy/green_island_website' target='new_blank') GitHub
+          #tab-content2.tab_content
+            .card
+              .img
+                img.o2-1(style='cursor: pointer;' src='/images/work2-1.png' alt='')
+              .top-text
+                p 健豪路跑
+                .name 活動頁面改版設計
+              .bottom-text
+                .text
+                  | 為針對 2018 年的
+                  a(href='http://snoopyrun.com.tw/' target='new_blank') 「健豪史努比主題路跑台北場」
+                  | 活動頁面改版設計（現該官網已改版），內容主要是以當時的網站為主體，進行頁面結構、版型重規劃設計。
+                #openDialog.btn.o2-1
+                  a(href='#') Read More
+            .card
+              .img
+                img.o2-2(style='cursor: pointer;' src='/images/work2-2.png' alt='')
+              .top-text
+                p 簡單生活節
+                .name 活動頁面改版設計
+              .bottom-text
+                .text
+                  | 針對 2019 年的
+                  a(href='https://simplelife.streetvoice.com/' target='new_blank') 「簡單生活節」
+                  | 活動頁面改版設計，內容主要是以當時的網站為主體，分別從功能／架構／頁面等部分分析，結合活動目標來進行重構優化。
+                #openDialog.btn.o2-2
+                  a(href='#') Read More
+            .card
+              .img
+                img.o2-3(style='cursor: pointer;' src='/images/work2-3.jpg' alt='')
+              .top-text
+                p 建豪月曆
+                .name 活動頁面改版設計
+              .bottom-text
+                .text
+                  | 此為 2018 年
+                  a(href='http://www.gding.com.tw/about/competition_2018.htm' target='new_blank') 「建豪盃第 9 屆月曆比賽」
+                  | 活動頁面改版作品，其色調、頁面風格皆有針對其主題來做調整。
+                #openDialog.btn.o2-3
+                  a(href='#') Read More
+          #tab-content3.tab_content
+            .card
+              .img
+                img.o3-1(style='cursor: pointer;' src='/images/work-1.png' alt='')
+              .top-text
+                p 中國產品設計大賽：知群 ✕ 滴滴
+                .name 青桔單車之用戶成長體系
+              .bottom-text
+                .text 根據中國品牌「滴滴」旗下的產品「青桔單車」，以「成長體系」為方向進行優化，透過市場背景分析、訪談問卷調查等過程萃取問題與機會點，進而輸出可行的產品提案。
+                #openDialog.btn.o3-1
+                  a(href='#') Read More
+            .card
+              .img
+                img.o3-2(style='cursor: pointer;' src='/images/work3-2.jpg' alt='')
+              .top-text
+                p 餓了嗎
+                .name 運營優化提案
+              .bottom-text
+                .text 以現有的成熟產品「餓了嗎」作為分析對象，從「運營」的角度來研究現況、客群與策略方案，盡可能延續其產品生命週期，創造新的盈利機會與商機。
+                .btn.o3-2
+                  a(href='#') Read More
+            .card
+              .img
+                img.o3-3(style='cursor: pointer;' src='/images/work3-3.jpg' alt='')
+              .top-text
+                p 蝦米音樂
+                .name 競品分析報告
+              .bottom-text
+                .text
+                  | 以「蝦米音樂」為視角出發所做的競品分析，因該產品市場核心主要以中國為主，因此競品對象挑選近期急速竄升排行榜的網易雲音樂，內容以「用戶體驗五要素」的幾個維度進行分析。
+                .btn.o3-3
+                  a(href='#') Read More
+        // web design box 01 section
+        .box.b2-1
+          .box-content
+            p.box-title 健豪路跑 ——— 活動頁面改版設計
+            .line
+            h6.box-title2  ———  2018 年作品
+            br
+            p.box-text
+              | 此為 2018 年的活動頁面改版設計，當時路跑活動盛行，恰巧健豪推出「史努比主題的路跑台北場活動」，在觀看其 
+              a(href='http://snoopyrun.com.tw/' target='new_blank')  活動資訊頁面
+              |  時發現資訊量太多，卻沒有有效整理呈現，導致需花兩倍時間理解與找資訊，遂才嘗試進行網頁重構。
+            br
+            img(src='/images/web_design_01/01.jpg' alt='')
+            br
+            br
+            #closeDialog.close.c2-1
+              a(href='#') Close
+            br
+            br
+        // web design box 02 section
+        .box.b2-2
+          .box-content
+            p.box-title 簡單生活節 ——— 活動頁面改版設計
+            .line
+            h6.box-title2  ———  2019 年作品
+            br
+            p.box-text
+              | 此為 2019 年的網站頁面改版設計，因興趣緣故平時有聽團參加活動的習慣，在瀏覽當時 
+              a(href='https://simplelife.streetvoice.com/' target='new_blank') 「簡單生活節」
+              |  的網站時發現使用體驗不佳，遂才嘗試進行網頁重規劃。
+            br
+            img(src='/images/web_design_02/01.png' alt='')
+            img(src='/images/web_design_02/02.png' alt='')
+            img(src='/images/web_design_02/03.png' alt='')
+            br
+            br
+            #closeDialog.close.c2-2
+              a(href='#') Close
+            br
+            br
+        // web design box 03 section
+        .box.b2-3
+          .box-content
+            p.box-title 建豪月曆 ——— 活動頁面改版設計
+            .line
+            h6.box-title2  ———  2018 年作品
+            br
+            p.box-text
+              | 此為 2018 年的
+              a(href='http://www.gding.com.tw/about/competition_2018.htm' target='new_blank') 「建豪盃第 9 屆月曆比賽」
+              |  的活動頁面改版設計，當時參考了其月曆比賽命題（台灣水果／花卉／寵物）來進行頁面風格調整，使其整體看起來更為活潑。
+            br
+            img(src='/images/web_design_03/01.jpg' alt='')
+            p.box-title-02 桌曆內頁設計
+            p.box-text 在頁面改版之餘，我當時也有參加月曆比賽的活動，根據其主題，挑選「各個月份的代表花」為意象，來設計 1～12月的月曆。（僅以部分示意）
+            br
+            img(src='/images/web_design_03/02.jpg' alt='')
+            img(src='/images/web_design_03/03.jpg' alt='')
+            img(src='/images/web_design_03/04.jpg' alt='')
+            br
+            br
+            #closeDialog.close.c2-3
+              a(href='#') Close
+            br
+            br
+        // product design box 01 section
+        .box.b3-1
+          .box-content
+            p.box-title 中國產品設計大賽：知群 ✕ 滴滴 ——— 青桔單車之用戶成長體系
+            .line
+            h6.box-title2  ———  2020 年作品
+            br
+            p.box-text
+              | 此為 2020 年參加中國的產品相關競賽作品（作品內文為簡字），該項目與中國品牌「滴滴」合作，大賽命題為根據「滴滴」旗下的產品「青桔單車」，以「成長體系」為方向進行優化，透過市場背景分析、訪談問卷調查等過程萃取問題與機會點，進而輸出可行的產品提案。
+              br
+              |                     我和其他四位朋友共同組隊參加，並主導方案設計、排版與概念產出，最終幸運獲得
+              b 「人氣獎」
+              | 。
+            br
+            img(src='/images/product_design_01/0-1.jpg' alt='')
+            img(src='/images/product_design_01/0-2.jpg' alt='')
+            img(src='/images/product_design_01/0-3.jpg' alt='')
+            p.box-title-02 大賽提案作品
+            img(src='/images/product_design_01/1.png' alt='')
+            img(src='/images/product_design_01/2.png' alt='')
+            img(src='/images/product_design_01/3.png' alt='')
+            img(src='/images/product_design_01/4.png' alt='')
+            img(src='/images/product_design_01/5.png' alt='')
+            img(src='/images/product_design_01/6.png' alt='')
+            img(src='/images/product_design_01/7.png' alt='')
+            img(src='/images/product_design_01/8.png' alt='')
+            img(src='/images/product_design_01/9.png' alt='')
+            img(src='/images/product_design_01/10.png' alt='')
+            img(src='/images/product_design_01/11.png' alt='')
+            img(src='/images/product_design_01/12.png' alt='')
+            img(src='/images/product_design_01/13.png' alt='')
+            img(src='/images/product_design_01/14.png' alt='')
+            img(src='/images/product_design_01/15.png' alt='')
+            img(src='/images/product_design_01/14.png' alt='')
+            img(src='/images/product_design_01/16.png' alt='')
+            img(src='/images/product_design_01/17.png' alt='')
+            img(src='/images/product_design_01/18.png' alt='')
+            img(src='/images/product_design_01/19.png' alt='')
+            img(src='/images/product_design_01/20.png' alt='')
+            img(src='/images/product_design_01/21.png' alt='')
+            img(src='/images/product_design_01/22.png' alt='')
+            img(src='/images/product_design_01/23.png' alt='')
+            img(src='/images/product_design_01/24.png' alt='')
+            img(src='/images/product_design_01/25.png' alt='')
+            img(src='/images/product_design_01/26.png' alt='')
+            img(src='/images/product_design_01/27.png' alt='')
+            img(src='/images/product_design_01/28.png' alt='')
+            img(src='/images/product_design_01/29.png' alt='')
+            img(src='/images/product_design_01/30.png' alt='')
+            img(src='/images/product_design_01/31.png' alt='')
+            img(src='/images/product_design_01/32.png' alt='')
+            img(src='/images/product_design_01/33.png' alt='')
+            img(src='/images/product_design_01/34.png' alt='')
+            img(src='/images/product_design_01/35.png' alt='')
+            img(src='/images/product_design_01/37.png' alt='')
+            img(src='/images/product_design_01/38.png' alt='')
+            img(src='/images/product_design_01/39.png' alt='')
+            img(src='/images/product_design_01/40.png' alt='')
+            br
+            br
+            #closeDialog.close.c3-1
+              a(href='#') Close
+            br
+            br
+        // product design box 02 section
+        .box.b3-2
+          .box-content
+            p.box-title 餓了嗎 ——— 運營優化提案
+            .line
+            h6.box-title2  ———  2021 年作品
+            br
+            p.box-text
+              | 該運營提案是以中國外賣 APP「餓了嗎」的產品經理視角，針對不同類型的客群對象做的精細化運營策略方案。過程牽涉產品現狀背景分析、競品分析、用戶調研（訪談／問卷）、 用戶分群、運營策略制定等環節，全面性的來分析現有的成熟產品。
+              br
+              br
+              |                   ✱ 因作品為參與中國課程時產出，報告內容均為簡字。
+            p.box-title-02 作品
+            br
+            img(src='/images/product_design_02/0.jpg' alt='')
+            img(src='/images/product_design_02/1.jpg' alt='')
+            img(src='/images/product_design_02/2.jpg' alt='')
+            img(src='/images/product_design_02/3.jpg' alt='')
+            img(src='/images/product_design_02/3-1.jpg' alt='')
+            img(src='/images/product_design_02/3-2.jpg' alt='')
+            img(src='/images/product_design_02/3-3.jpg' alt='')
+            img(src='/images/product_design_02/3-4.jpg' alt='')
+            img(src='/images/product_design_02/3-5.jpg' alt='')
+            img(src='/images/product_design_02/3-6.jpg' alt='')
+            img(src='/images/product_design_02/3-7.jpg' alt='')
+            img(src='/images/product_design_02/4.jpg' alt='')
+            img(src='/images/product_design_02/4-1.jpg' alt='')
+            img(src='/images/product_design_02/4-2.jpg' alt='')
+            img(src='/images/product_design_02/4-3.jpg' alt='')
+            img(src='/images/product_design_02/4-4.jpg' alt='')
+            img(src='/images/product_design_02/4-5.jpg' alt='')
+            img(src='/images/product_design_02/4-6.jpg' alt='')
+            img(src='/images/product_design_02/5.jpg' alt='')
+            img(src='/images/product_design_02/5-1.jpg' alt='')
+            img(src='/images/product_design_02/5-2.jpg' alt='')
+            img(src='/images/product_design_02/5-3.jpg' alt='')
+            img(src='/images/product_design_02/5-4.jpg' alt='')
+            img(src='/images/product_design_02/5-5.jpg' alt='')
+            img(src='/images/product_design_02/6.jpg' alt='')
+            img(src='/images/product_design_02/6-1.jpg' alt='')
+            img(src='/images/product_design_02/6-2.jpg' alt='')
+            img(src='/images/product_design_02/6-3.jpg' alt='')
+            img(src='/images/product_design_02/6-4.jpg' alt='')
+            img(src='/images/product_design_02/7.jpg' alt='')
+            img(src='/images/product_design_02/7-1.jpg' alt='')
+            img(src='/images/product_design_02/8.jpg' alt='')
+            br
+            br
+            #closeDialog.close.c3-2
+              a(href='#') Close
+            br
+            br
+        // product design box 03 section
+        .box.b3-3
+          .box-content
+            p.box-title 蝦米音樂 ——— 競品分析報告
+            .line
+            h6.box-title2  ———  2020 年作品
+            br
+            p.box-text
+              | 此分析報告是以「蝦米音樂」為出發點、「網易雲音樂」作為直接競品而分析的報告，過程使用「用戶體驗五要素」（戰略層、範圍層、結構層、框架層、表現層）方法為框架呈現，並針對各層面的產品分析內容總結與給出改善建議。
+              br
+              br
+              |                 ✱ 因作品為參與中國課程時產出，報告內容均為簡字。
+            p.box-title-02 作品
+            br
+            img(src='/images/product_design_03/0.jpg' alt='')
+            img(src='/images/product_design_03/1.jpg' alt='')
+            img(src='/images/product_design_03/2.jpg' alt='')
+            img(src='/images/product_design_03/3.jpg' alt='')
+            img(src='/images/product_design_03/4.jpg' alt='')
+            img(src='/images/product_design_03/5.jpg' alt='')
+            img(src='/images/product_design_03/6.jpg' alt='')
+            img(src='/images/product_design_03/7.jpg' alt='')
+            img(src='/images/product_design_03/8.jpg' alt='')
+            img(src='/images/product_design_03/9.jpg' alt='')
+            img(src='/images/product_design_03/10.jpg' alt='')
+            img(src='/images/product_design_03/11.jpg' alt='')
+            img(src='/images/product_design_03/12.jpg' alt='')
+            img(src='/images/product_design_03/13.jpg' alt='')
+            img(src='/images/product_design_03/14.jpg' alt='')
+            img(src='/images/product_design_03/15.jpg' alt='')
+            img(src='/images/product_design_03/16.jpg' alt='')
+            img(src='/images/product_design_03/17.jpg' alt='')
+            img(src='/images/product_design_03/18.jpg' alt='')
+            img(src='/images/product_design_03/19.jpg' alt='')
+            img(src='/images/product_design_03/20.jpg' alt='')
+            img(src='/images/product_design_03/21.jpg' alt='')
+            img(src='/images/product_design_03/22.jpg' alt='')
+            img(src='/images/product_design_03/23.jpg' alt='')
+            img(src='/images/product_design_03/24.jpg' alt='')
+            br
+            br
+            #closeDialog.close.c3-3
+              a(href='#') Close
+            br
+            br
+    // footer section
+    footer
+      span
+        | Powered By 
+        a(href='#') Kimi
+        |  ｜ 2021
+        i.far.fa-copyright
+        |  All Rights Reserved.
+    script.
+      $(document).ready(function () {
+      $(document).scroll(function () {
+      var scroll = $(this).scrollTop();
+      var topDist = $('#container').position();
+      if (scroll > topDist.top) {
+      $('.navbar').addClass('sticky');
+      } else {
+      $('.navbar').removeClass('sticky');
+      }
+      if (scroll > 500) {
+      $('.scroll-up-btn').addClass('show');
+      } else {
+      $('.scroll-up-btn').removeClass('show');
+      }
+      });
+      //slide-up script
+      $('.scroll-up-btn').click(function () {
+      $('html').animate({ scrollTop: 0 });
+      });
+      // toggle menu/navbar script
+      $('.menu-btn').click(function () {
+      $('.navbar .menu').toggleClass('active');
+      $('.menu-btn i').toggleClass('active');
+      });
+      //dropmeanu script
+      $(".dropdownmenu li a").click(function() {
+      // Active state for tabs
+      $(".dropdownmenu li a").removeClass("active");
+      $(this).addClass("active");
+      // Active state for Tabs Content
+      $(".tab_content_container > .tab_content_active").removeClass("tab_content_active").fadeOut(200);
+      $(this.rel).fadeIn(500).addClass("tab_content_active");
+      });
+      // web design 01 section
+      $(".b2-1").hide();
+      $(".o2-1").click(function () {
+      $(".b2-1").show();
+      $("body").addClass("no-scroll");
+      });
+      $(".c2-1").click(function () {
+      $(".b2-1").hide();
+      $("body").removeClass("no-scroll");
+      });
+      // web design 02 section
+      $(".b2-2").hide();
+      $(".o2-2").click(function () {
+      $(".b2-2").show();
+      $("body").addClass("no-scroll");
+      });
+      $(".c2-2").click(function () {
+      $(".b2-2").hide();
+      $("body").removeClass("no-scroll");
+      });
+      // web design 03 section
+      $(".b2-3").hide();
+      $(".o2-3").click(function () {
+      $(".b2-3").show();
+      $("body").addClass("no-scroll");
+      });
+      $(".c2-3").click(function () {
+      $(".b2-3").hide();
+      $("body").removeClass("no-scroll");
+      });
+      // product design 01 section
+      $(".b3-1").hide();
+      $(".o3-1").click(function () {
+      $(".b3-1").show();
+      $("body").addClass("no-scroll");
+      });
+      $(".c3-1").click(function () {
+      $(".b3-1").hide();
+      $("body").removeClass("no-scroll");
+      });
+      // product design 02 section
+      $(".b3-2").hide();
+      $(".o3-2").click(function () {
+      $(".b3-2").show();
+      $("body").addClass("no-scroll");
+      });
+      $(".c3-2").click(function () {
+      $(".b3-2").hide();
+      $("body").removeClass("no-scroll");
+      });
+      // product design 03 section
+      $(".b3-3").hide();
+      $(".o3-3").click(function () {
+      $(".b3-3").show();
+      $("body").addClass("no-scroll");
+      });
+      $(".c3-3").click(function () {
+      $(".b3-3").hide();
+      $("body").removeClass("no-scroll");
+      });
+      });
