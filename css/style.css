@@ -100,7 +100,7 @@ html {
 /* home section styling */
 .home {
   display: flex;
-  background: url('https://github.com/a3216lucy/portfolio/images/banner.jpg') no-repeat center;
+  background: url('/portfolio/images/banner.jpg') no-repeat center;
   background-size: cover;
   height: 100vh;
   color: #fff;
