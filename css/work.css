@@ -283,7 +283,7 @@ section .title::after {
   font-family:'Noto Sans CJK TC';
   position: fixed;
   clear: both;
-  top: 8%;
+  top: 15%;
   right: 6%;
   left: 6%;
   display: flex;
@@ -293,7 +293,7 @@ section .title::after {
   background: #fff;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
   width: 1200px;
-  height: 700px;
+  height: 600px;
   overflow:scroll;
   z-index: 100;
 }
@@ -614,6 +614,8 @@ footer a:hover {
   }
   .box {
     width: 350px;
+    top: 6%;
+    height: 500px;
   }
   .box-content{
     width: 100%;
