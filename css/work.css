@@ -104,9 +104,7 @@ html {
 /* all similar content styling code */
 section {
   padding: 100px 0;
-  background: #fff;
-  display: flex;
-  flex-wrap: wrap;
+
 }
 section .title {
   position: relative;
@@ -140,7 +138,7 @@ section .title::after {
 
 /* dropdownmenu section styling */
 .work{
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 .work .title::after {
   content: '  What I have done  ';
@@ -586,20 +584,33 @@ footer a:hover {
   .home .home-content .text-3 {
     font-size: 27px;
   }
+  .work .title{
+    margin-bottom: 20px;
+    padding-bottom: 20px; 
+  }
+  .work .title::before {
+    bottom: 6px;
+  }
+  .work .title::after {
+    bottom: -5px;
+    font-size: 14px;
+  }
   .dropdownmenu{
-    width: 350px; 
+    width: 350px;
+    height:56px; 
   }
   .dropdownmenu a{
-    padding: 7px 20px;
+    padding: 2px 10px;
     font-size: 12px;
   }
   .tab_content_container {
-    width: 370px;
+    width: 350px;
     padding-top: 30px;
+    right: 5%;
   }
   .tab_content .card {
-    width: calc(100% - 30px);
-    margin: 15px;
+    width: calc(100% - 10px);
+    margin: 5px;
   }
   .box {
     width: 350px;
